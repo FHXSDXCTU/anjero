@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070a12">
+<title>PLATING AI — Smart Electroplating Assistant</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="bg"></div>
+<header class="topbar">
+  <div class="brand"><div class="logo">P</div><div><b>PLATING<span>AI</span></b><small>SMART ELECTROPLATING</small></div></div>
+  <div class="status"><i></i><span id="status">SYSTEM</span></div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="eyebrow">AI TECHNICAL ASSISTANT</div>
+ <h1>Asisten plating<br><strong>di tangan Anda.</strong></h1>
+ <p>Tanya apa saja tentang proses elektroplating nickel & chrome. Tidak perlu mengisi form terlebih dahulu. Jelaskan kondisi Anda dengan bahasa biasa.</p>
+</section>
+
+<section id="assistant" class="assistant card">
+ <div class="section-head">
+  <div><span class="number">01</span><div><h2>PLATING AI</h2><p>Jelaskan masalah atau kebutuhan Anda.</p></div></div>
+  <span class="pill">AI READY</span>
+ </div>
+ <div class="chat" id="chat"><div class="bubble ai">Halo. Saya Plating AI. Ceritakan kondisi barang, proses, atau masalah plating yang sedang terjadi. Jika saya membutuhkan data seperti pH, suhu, arus, atau volume bak, saya akan meminta data tersebut.</div></div>
+ <div class="quick">
+  <button onclick="setQ('Hasil nickel saya kusam, apa yang harus saya periksa?')">Nickel kusam</button>
+  <button onclick="setQ('Hasil chrome saya belang, bagaimana cara mencari penyebabnya?')">Chrome belang</button>
+  <button onclick="setQ('Barang saya peeling atau mengelupas, apa penyebabnya?')">Peeling</button>
+  <button onclick="setQ('Ajari saya SOP proses plating dari awal sampai akhir.')">SOP proses</button>
+ </div>
+ <div class="input-row"><input id="q" placeholder="Ketik pertanyaan Anda..." onkeydown="if(event.key==='Enter')ask()"><button onclick="ask()" class="send">↑</button></div>
+</section>
+
+<section class="modules">
+ <div class="section-title"><span>02</span><h2>Technical Assistant</h2></div>
+ <div class="grid">
+  <article class="module card"><div class="icon">◈</div><h3>Cek Komposisi</h3><p>Masukkan data hanya ketika AI memintanya.</p><button onclick="setQ('Saya ingin mengecek apakah komposisi bak saya sudah benar.')">Mulai →</button></article>
+  <article class="module card"><div class="icon">⌁</div><h3>Troubleshooting</h3><p>Cari kemungkinan penyebab cacat plating secara bertahap.</p><button onclick="setQ('Saya mengalami masalah pada hasil plating dan ingin troubleshooting.')">Mulai →</button></article>
+  <article class="module card"><div class="icon">◇</div><h3>SOP Guide</h3><p>Ikuti panduan kerja berdasarkan tahapan proses.</p><button onclick="setQ('Berikan SOP operator plating dari persiapan sampai finishing.')">Mulai →</button></article>
+  <article class="module card"><div class="icon">⌬</div><h3>Analisa Proses</h3><p>AI meminta informasi yang diperlukan, bukan form panjang.</p><button onclick="setQ('Analisa proses saya dan tanyakan data yang diperlukan.')">Mulai →</button></article>
+ </div>
+</section>
+
+<section class="info card">
+ <div><span class="number">03</span><h2>Bagaimana cara kerja?</h2></div>
+ <div class="steps"><div><b>01</b><span>Anda bertanya</span></div><div><b>02</b><span>AI mengidentifikasi masalah</span></div><div><b>03</b><span>AI meminta data jika diperlukan</span></div><div><b>04</b><span>AI memberikan analisa & langkah berikutnya</span></div></div>
+</section>
+
+<section class="safety">
+ <b>SAFETY FIRST</b><p>Untuk chemical berbahaya dan proses chrome/Cr(VI), ikuti SDS, SOP lokasi, ventilasi, PPE, dan prosedur darurat. AI tidak boleh menggantikan kontrol keselamatan atau teknisi yang kompeten.</p>
+</section>
+</main>
+<footer>PLATING AI <span>•</span> SMART ELECTROPLATING ASSISTANT</footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.js"></script>
+<script src="/app.js"></script>
+</body></html>

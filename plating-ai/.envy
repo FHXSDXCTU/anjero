@@ -1,0 +1,4 @@
+PORT=3000
+GEMINI_API_KEY=AQ.Ab8RN6ILg0EVt_WqoKF0Pg7_uISCWgjd3kwQPxgrCba5VpUAgQ
+GEMINI_MODEL=gemini-2.5-flash
+ADMIN_PASSWORD=ubah-password-ini
